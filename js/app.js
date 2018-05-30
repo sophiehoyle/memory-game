@@ -44,10 +44,8 @@ function startGame() {
 		cards[i].classList.remove("show", "open", "match", "noMatch", "disabled");
 	}
 
-	//Reset moves
 	moves = 0;
 	counter.innerHTML = moves;
-	//Reset rating
 	for (var i = 0; i < stars.length; i++) {
 		stars[i].style.color = "#FFD700";
 		stars[i].style.visibility = "visible";
@@ -70,11 +68,10 @@ var displayCard = function() {
 
 //Start timer when card clicked
 var second = 0,
-		minute = 0;
-		hour = 0;
+minute = 0;
+hour = 0;
 var timer = document.querySelector(".timer");
 var interval;
-
 function startTimer() {
 	interval = setInterval(function() {
 		timer.innerHTML = minute + "mins " + second + "secs";
