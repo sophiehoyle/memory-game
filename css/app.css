@@ -190,26 +190,48 @@ body {
 }
 
 /*Responsive styles*/
-@media (max-width: 320px) {
-	.deck {
-		width: 85%;
+@media screen and (max-width: 700px) {
+	.container {
+		font-size: 16px;
 	}
+
+	.deck {
+ 		 min-height: auto;
+  		padding: 2px;
+  		width: 90%;
+	}
+
 	.deck .card {
-		height: 4.7rem;
-		width: 4.7rem;
+  		flex-basis: 24%;
+  		margin: 1px;
+		height: 80px;
+		width: 80px;
+  	}
+
+	.deck .card.show {
+		font-size: 20px;
+	}
+
+	.deck .card.match {
+		font-size: 24px;
+	}
+
+	.popup .content-1 .content-2 {
+		font-size:24px;
 	}
 }
-@media (min-width: 768px) {
+
+@media (min-width: 701px) {
 	.container {
-		font-size: 22px;
+		font-size: 28px;
 	}
 	.deck {
 		width: 660px;
 		height: 680px;
 	}
 	.deck .card {
-		height: 125px;
-		width: 125px;
+		height: 140px;
+		width: 140px;
 	}
 	.popup {
 		width: 60%;
